@@ -391,9 +391,7 @@ const LogsTable = () => {
                         extra={
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                 
-                                <Button icon={<IconDownload />} theme='borderless' type='primary' onClick={(e) => exportCSV(e)} disabled={!tokenValid || logs.length === 0}>
-                                    导出为CSV文件
-                                </Button>
+
                             </div>
                         }
                         disabled={!tokenValid}
