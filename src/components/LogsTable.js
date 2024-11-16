@@ -390,7 +390,7 @@ const LogsTable = () => {
                         itemKey="2"
                         extra={
                             <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <Tag color='green' style={{ marginRight: 5 }}>计算：$1 = 50 0000 tokens</Tag>
+                                
                                 <Button icon={<IconDownload />} theme='borderless' type='primary' onClick={(e) => exportCSV(e)} disabled={!tokenValid || logs.length === 0}>
                                     导出为CSV文件
                                 </Button>
