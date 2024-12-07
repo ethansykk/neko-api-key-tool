@@ -141,29 +141,7 @@ const LogsTable = () => {
             render: renderTimestamp,
             sorter: (a, b) => a.created_at - b.created_at,
         },
-        {
-            title: '令牌名称',
-            dataIndex: 'token_name',
-            render: (text, record, index) => {
-                return record.type === 0 || record.type === 2 ? (
-                    <div>
-                        <Tag
-                            color="grey"
-                            size="large"
-                            onClick={() => {
-                                copyText(text);
-                            }}
-                        >
-                            {' '}
-                            {text}{' '}
-                        </Tag>
-                    </div>
-                ) : (
-                    <></>
-                );
-            },
-            sorter: (a, b) => ('' + a.token_name).localeCompare(b.token_name),
-        },
+        
         {
             title: '模型',
             dataIndex: 'model_name',
